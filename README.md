@@ -59,7 +59,9 @@ Ref 7. This screenshot shows me using the command "chmod g+r .project_x.txt" to 
 
 Ref 8. Lastly, in this screenshot the files and directories in the projects directory belong to the researcher2 user. Which measn only researcher2 should be allowed to access the drafts directory. As you can see in the first screenshot, the group owner type has permission to execute the file. I use the "chmod g-x drafts" command to remove the execution permission and display the changes made with "ls -la".
 
+# Summary
 
+This lab focused on managing and modifying file permissions in Linux to ensure proper authorization for users, groups, and others. The activity began with navigating directories using pwd, ls, and cd commands to locate files and directories requiring review. Detailed permissions were inspected with the ls -la command, which displayed the 10-character permission strings indicating the file type and read, write, and execute access for the user, group, and others. Permissions were analyzed for specific files, such as the hidden file .project_x.txt, where adjustments were made to align with security requirements. For example, write permissions were removed for users and groups using chmod u-w and chmod o-w, and read permissions were added for the group using chmod g+r. Similarly, the drafts directory was modified to restrict execution permissions for the group owner type, ensuring only the intended user had access. All changes were verified with the ls -la command, demonstrating an understanding of secure file permission practices and the principle of least privilege.
 
 
 
